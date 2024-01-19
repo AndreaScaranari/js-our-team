@@ -30,4 +30,7 @@ const teamMembers = [
         role: "Graphic Designer",
         picture: "barbara-ramos-graphic-designer.jpg"
     }
-]
+];
+
+// # Milestone 1
+console.log(teamMembers);
