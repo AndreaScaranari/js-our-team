@@ -33,4 +33,36 @@ const teamMembers = [
 ];
 
 // # Milestone 1
-console.log(teamMembers);
+for (let member of teamMembers) {
+    for (let key in member) {
+        console.log(member[key]);
+    }
+}
+
+// # Milestone 2
+const list = document.getElementById("team-list");
+
+let membersAttributes = "";
+
+for (let member of teamMembers) {
+    const {name, role, picture} = member;
+    membersAttributes += `<li>${name}, ${role}, ${picture} </li>`
+}
+
+list.innerHTML = membersAttributes;
+
+// oppure
+
+let forInMembers = "";
+
+for (let member of teamMembers) {
+    forInMembers += `<li><ul>`
+    
+    for (let key in member) {
+        forInMembers += `<li>${member[key]}</li>`
+    }
+    
+    forInMembers += `</li></ul>`
+    }
+
+list.innerHTML = forInMembers;
