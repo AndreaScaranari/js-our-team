@@ -79,3 +79,4 @@ for (let member of teamMembers) {
 }
 
 list.innerHTML = membersAttributes;
+
